@@ -1,40 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title></title>
-    <style type="text/css">
+    <meta charset="UTF-8">
+    <title>练习页面</title>
 
-
-        img {
-            width: 60px;
-        }
-        .demo01{
-            background-color: #a0aae2;
-            width: 458px;
-            padding: 20px;
-            border: 1px solid #cc6832;
-            margin-left: 100px;
-            position: relative;
-        }
-        .demo01 p{font-size: 12px; line-height: 25px;}
-        .demo01 img{ float: left ; margin:-20px 0 0 -100px}
-        .demo01 span{ position: absolute; right: 20px;top: 10px;font-size: 12px}
-
-    </style>
+    <!-- 引入reset.css用来清除浏览器的默认样式 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
-<div class="demo01">
-    <img src="img/timg.jpg"/>
-    <h6>你好你好你好</h6>
-    <p>你好你好你好你好你好你好你好你好你好你好你好你
-        好你好你好你好你好你好你好你好你好你好你好你好
-        你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你
-        好你好你好你好你好你好你好你好你好你好你好你好
-        你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你
-        好你好你好你好你好你好你好你好你好你好你好你好
-        你好你好你好你好你好你好你好你好你好你好</p>
-    <span>2019年6月19日</span>
+<div class="header w">
+
+    <!--导航条-->
+    <ul class="nav">
+        <li>
+            <a href="#">HOME</a>
+            <p>Back to home</p>
+        </li>
+        <li>
+            <a href="#">PRODUCTS</a>
+            <p>What we have for you</p>
+        </li>
+        <li>
+            <a href="#">SERVICES</a>
+            <p>Things we do</p>
+        </li>
+        <li>
+            <a href="#">BLOG</a>
+            <p>Follow our updates</p>
+        </li>
+        <li>
+            <a href="#">CONTACT</a>
+            <p>Ways to reach us</p>
+        </li>
+    </ul>
+
+
+    <div class="logo" title="网站logo">
+        <img src="img/logo.png">
+    </div>
+</div>
+
+<div class="banner w">
+    <img src="img/banner/banner01.png">
+    <div class="pointerDiv">
+        <a href="#"></a>
+        <a href="#" class="active"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+</div>
+<div class="content w clearfix">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+    <div class="pl">
+        <h2>Perfect Logic</h2>
+        <p class="p1">All you want your website to do.</p>
+        <div class="imgDiv">
+            <img src="img/pic/pic1.jpg">
+        </div>
+        <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste
+            natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit
+        </p>        <a href="#">Learn More</a>
+    </div>
+    <div class="cs">
+        <h2>Perfect Logic</h2>
+        <p class="p1">All you want your website to do.</p>
+        <div class="imgDiv">
+            <img src="img/pic/pic2.jpg">
+        </div>
+        <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste
+            natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit
+        </p>        <a href="#">Learn More</a>
+    </div>
+    <div class="uc">
+        <h2>Perfect Logic</h2>
+        <p class="p1">All you want your website to do.</p>
+        <div class="imgDiv">
+            <img src="img/pic/pic3.jpg">
+        </div>
+        <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste
+            natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit voluptatem Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem Sed ut perspiciatis unde omnis iste natus error sit
+        </p>
+        <a href="#">Learn More</a>
+    </div>
+
+</div>
+
+<div class="contact w clearfix">
+    <div class="sc">
+        <h2>Social Connection</h2>
+        <p class="p1">At vero eos et accusamus et iusto odio dignissimos ducimus qui  </p>
+        <div class="icon">
+            <a href="#"><img src="img/rss.png"/></a>
+            <a href="#"><img src="img/fb.png"/></a>
+            <a href="#"><img src="img/in.png"/></a>
+            <a href="#"><img src="img/yt.png"/></a>
+            <a href="#"><img src="img/tw.png"/></a>
+        </div>
+        <h2 class="sep">Newsletter</h2>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui </p>
+        <form action="#">
+            <input class="txt" type="text" placeholder="your email address"/>
+            <button class="btn" type="button">Subscribe</button>
+        </form>
+    </div>
+    <div class="co">
+        <h2>Contact</h2>
+        <form action="#">
+            <input class="txt" type="text" placeholder="your name"/>
+            <input class="txt" type="text" placeholder="your email address"/>
+
+            <textarea class="tarea" placeholder="message"></textarea>
+
+            <button class="btn" type="button">Subscribe</button>
+        </form>
+    </div>
+    <div class="nu">
+        <h2>News Updates</h2>
+        <p>
+            <img src="img/pic/1.gif"/>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+            <img src="img/pic/2.gif"/>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+        <p class="no-margin">
+            <img src="img/pic/3.gif"/>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+        </p>
+        <button class="btn">Visit our Blog</button>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="w">
+        <p class="copy">Copyright 2010. Studio VIVROCKS. All Rights Reserved.</p>
+        <p>Site Powered by Wordpress. Design and Developed by VIVROCKS.</p>
+        <p><a href="#">Home</a>  | <a href="#">About</a> | <a href="#">Products</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></p>
+    </div>
 </div>
 </body>
 </html>

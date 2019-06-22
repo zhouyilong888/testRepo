@@ -1,0 +1,281 @@
+
+
+/*
+ * 设置body
+ */
+body{
+    /*设置body的背景图片，水平方向重复*/
+    background: url(../img/bd-bg.png) repeat-x;
+}
+
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix{
+    zoom:1;
+}
+.w {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    /*background-color: #fa3544;*/
+    padding: 37px 0 46px 0;
+}
+
+.logo {
+    margin-left: 15px;
+}
+
+.nav {
+    float: right;
+    margin-top: 22px;
+}
+
+.nav li {
+    float: left;
+    border-left: 1px  dotted #8c8c8c ;
+    padding:0 8px 0 10px;
+}
+
+.nav a {
+    font: bold 14px Georgia;
+    text-decoration: none;
+    color: #666666;
+}
+/*设置超链接的移入效果*/
+.nav a:hover{
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+
+.nav p {
+    font: 11px tahoma;
+    color:#b7b7b7;
+}
+
+.banner{
+
+    background:  url(../img/banner-bg.png) no-repeat bottom center;
+    height: 356px;
+    position: relative;
+
+}
+.pointerDiv{
+    position: absolute;
+    left: 15px;
+    top: 314px;
+}
+
+.pointerDiv a{
+    float: left;
+    width: 17px;
+    height: 17px;
+    background:url("../img/pointer.png") no-repeat;
+}
+
+.pointerDiv .active,
+.pointerDiv a:hover{
+    background: url("../img/pointer-active.png") no-repeat;
+}
+
+.content h1{
+    font: bold 24px  Georgia;
+    text-align: center;
+    padding: 10px 0 16px 0;
+    margin-bottom: 39px;
+    background: url("../img/line.png") no-repeat bottom center;
+}
+
+.content h2{
+    font:  21px Georgia;
+    color: #11719e;
+}
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co,.contact .nu
+{
+    float: left;
+    width: 300px;
+}
+
+.content .cs,.content .uc,
+.contact .co,.contact .nu
+{
+     margin-left: 20px;
+ }
+.content .p1{
+    color: #8c8c8c;
+    font: 12px Helvetica;
+}
+.content .imgDiv{
+    width: 299px;
+    height: 189px;
+    text-align: center;
+    background: url("../img/img-bg.png") no-repeat;
+    padding-top: 12px;
+    margin-top:16px
+}
+
+.content .p2{
+    height: 92px;
+    font: 12px Helvetica;
+    color: #3e3e3e;
+    word-spacing: 2px;
+}
+.content a{
+    /*设置块元素*/
+    display: block;
+    width: 163px;
+    height: 40px;
+    color: #016999;
+    font: 12px/40px Helvetica ;
+    text-decoration: none;
+    background: url("../img/btn1.png") no-repeat;
+    text-indent: 1em;
+    margin-bottom: 34px;
+}
+
+/*设置背景*/
+.contact{
+    background: url(../img/line.png) no-repeat top center;
+    margin-bottom: 22px;
+}
+.contact .btn{
+    width: 163px;
+    height: 31px;
+    background: url(../img/btn2.png) no-repeat;
+    border: none;
+    /*
+	 * 去除默认内外边距
+	 */
+    padding: 0;
+    margin-top: 12px;
+    /*设置字体*/
+    color: white;
+    font: 13px Georgia;
+    /*设置文字的位置*/
+    text-align: left;
+    text-indent: 1em;
+
+}
+.contact .txt{
+    width: 276px;
+    height: 33px;
+    line-height: 33px;
+
+    /*
+    * 设置背景图片
+    */
+    background: url(../img/input.png) no-repeat;
+    border: none;
+    padding: 0px 10px;
+}
+
+.contact h2{
+    font: 18px Georgia;
+    color: #444444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding: 30px 0 9px 0;
+}
+.contact p{
+    font: 12px Helvetica;
+    color: #3e3e3e;
+    word-spacing: 2px;
+    margin:14px 0 0 0;
+}
+
+.contact .sep{
+    color: #444;
+    font: 18px/1 georgia;
+}
+.sc .icon{
+    font-size: 0px;
+    /*设置上外边距*/
+    margin-top: 4px;
+}
+
+.sc .icon a{
+    margin-right: 6px;
+}
+
+.sc .txt{
+    margin-top:15px;
+    margin-bottom: 0px;
+}
+
+.co .txt{
+    margin-top: 15px;
+}
+
+.co .tarea{
+    width: 276px;
+    height: 114px;
+    background: url("../img/textarea.png") no-repeat;
+    border: none;
+    /*
+	 * 设置文本域不能调整大小
+	 */
+    resize: none;
+    /*
+         * 去除滚动条
+         */
+    overflow: auto;
+
+
+    margin: 15px 0px 0px 0px;
+    padding: 10px;
+}
+
+.nu p{
+    color: #444;
+    font: 12px/1 helvetica;
+    height: 58px;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 9px;
+
+}
+
+.nu img{
+    float: left;
+    margin-right: 8px;
+}
+
+.footer{
+    height: 173px;
+    background: #333;
+
+    border-top: 10px solid #4c4c4c;
+
+}
+
+.footer p,.footer a{
+    color: #999;
+    font:11px helvetica ;
+    text-decoration: none;
+}
+
+.w .copy{
+    float: right;
+}
+
+.footer p{
+    margin-left: 8px;
+    margin-right: 23px;
+    margin-bottom: 6px;
+
+}
+
+.footer .w{
+    padding-top: 18px;
+}
+
+.footer a:hover{
+    color: #cccaca;
+    text-decoration: underline;
+}
